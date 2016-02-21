@@ -34,7 +34,7 @@ export const Resizeable = React.createClass({
   },
 });
 
-ReactDOM.render(<Resizeable><Chart></Resizeable>, container);
+ReactDOM.render(<Resizeable><Chart /></Resizeable>, container);
 ```
 
 This wrapper component keeps track of its current width, and if it changes, uses that as a rendering key.
