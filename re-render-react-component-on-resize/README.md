@@ -1,6 +1,8 @@
+# Re-render react component on resize
+
 I have a React component that renders a chart with d3, which uses `this.refs.svg.getBoundingClientRect().width` for scale computations. In order to make React re-render this chart, we can wrap it in a `<Resizable>` component like this:
 
-```
+```jsx
 export const Resizeable = React.createClass({
   propTypes: {
     children: React.PropTypes.element.isRequired,
